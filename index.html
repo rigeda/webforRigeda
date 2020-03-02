@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Heebo|Titillium+Web&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet"> 
+    <title>Rigeda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Home -->
+    <section class="home" id="home">
+            <a href="logo"><img src="" alt=""></a>
+        <nav>
+            <li class="heading"><a class="active" href="#home">Introduction</a></li>
+            <button class="menu"><i class="fas fa-bars"></i></button>
+        <div class="innernav">
+            <button class="close"><i class="fas fa-times i"></i></button>
+            <li class="heading"><a href="#about">Road Map</a></li>
+            <li class="heading"><a href="#demo">Components</a></li>
+            <!--<li class="heading"><a href="#install">Install</a></li>
+            <li class="heading"><a href="https://github.com/Deepak123bharat/lua-gl/wiki" target="_blank">Docs</a></li>
+            <li class="heading"><a href="https://github.com/rigeda/lua-gl" target="_blank">Src</a></li>-->
+        </div>
+    </nav> 
+    <div class="homeinner">
+        <div class="top">
+            <h1 class="heading">Introduction</h1>
+            <p>Graphical library to handle the hard parts of creating software like electronic schematic editor/flowchart creator/mind maps/block diagrams in Lua with just a few lines of code.</p>
+            <a href="#about">Learn More</a>
+        </div>
+       
+    </div>
+    </section>  
+    
+    <!-- About -->
+    <section class="about mod" id="about">
+        <h2 class="heading">Road Map</h2>
+        <p>
+            First why choose Lua? Lua is:
+			<ul>
+			<li>Very small</li>
+			<li>Extremely powerful</li>
+			<li>Very easy to learn for people from a non programming background or profession because:
+				<ul>
+					<li>It has a simple syntax</li>
+					<li>It has a single data structure</li>
+				</ul>
+			</li>
+			<li>Well proven language of choise in well known projects like:
+				<ul>
+					<li>Mediawiki (Wikipedia)</li>
+					<li>Wireshark</li>
+					<li>World of Warcraft</li>
+					<li>LuaTex</li>
+					<li>NMAP</li>
+					<li>Celestia</li>
+					<li>and so on...</li>
+				</ul>
+			</li>
+			</ul>
+			These reasons by themself make it a very powerful language for newcomers to adopt to get things done. <br><br>
+			
+			<ul>
+			<li><b>Lua-GL finally modularizes the design of complex software in a language that can be adapted by non expert programmers.</b></li> Most graphical software are mamoth code bases in languages such as C/C++/.NET/Java which are comparitively harder to adopt than languages like Python, Ruby and Lua. On top of that they don't incorporate modularity and flexibility by abstracting away the design into multiple layers. 
+			<li><b>Lua-GL aims to provide the 1st level library in a well chosen simple scripting language that can provide all the mechanisms to create complex graphical software</b></li> Software like a electronic schematic editor or a block diagram creator software similar to Microsoft Visio. It abstract away all the complex graphical operations and provides a simple extensible API that can be used to create a software with custom behavior, functionality and workflow. 
+			<li><b>Lua-GL even goes a step further by abstracting away the underlying GUI framework</b></li> to make it easy to swap it for say QT or even Javascript routines now that we can run Lua directly on the <a href="https://fengari.io/">browser</a>.
+			</ul>
+   With these design choices for Lua-GL it simply makes things a lot easier, faster, interoperable and more scalable for projects using it.
+        </p>
+    </section>
+
+    <!-- Demo -->
+    <section class="demo" id="demo">
+        <h3 class="heading">Components</h3>
+        <h3 class="heading"><a href="https://github.com/Deepak123bharat/lua-gl/wiki" target="_blank">lua-gl</a></h3>
+        
+    </section>
+
+   
+    <!-- Footer -->
+    <section class="footer">
+        Copyright <i class="fas fa-copyright i"></i> Lua-gl 2020 - All Right Reserved
+    </section>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/solid.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

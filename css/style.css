@@ -1,0 +1,483 @@
+body{
+    font-family: 'DM Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font: 400 20px/1.5 'DM Sans',"Source Sans Pro","Open Sans",Roboto,"San Francisco",Helvetica,Arial,sans-serif;
+    color: #333;
+    outline: none;
+}
+html {
+    scroll-behavior: smooth;
+  }
+html:focus{
+    outline: none;
+}
+.heading{
+    font-family: 'Heebo', sans-serif;
+}
+.home{
+    position: relative;
+    margin: 0px;
+    background: linear-gradient(to bottom right,rgb(120,120,120),rgb(180,180,180));
+     padding-bottom:150px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px rgb(100,100,100);
+}
+nav .innernav{
+    display: flex;
+    flex-direction: row;
+}
+nav li{
+    margin: 0px 15px;
+    font-size: 1.2rem;
+    list-style-type: none;
+}
+nav li a{
+    color: inherit;
+    text-decoration: none;
+}
+nav li .active{
+    color: #ef233c;
+}
+.close{
+    background: none;
+    border: none;
+    display: none;
+}
+nav .menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+    background: none;
+    border: none;
+}
+nav .menu{
+    font-size: 1.3rem;
+}
+@media screen and (max-width: 630px){
+      nav{
+          width: 90%;
+          margin-top: 25px;
+      }
+}
+@media screen and (max-width: 550px){
+    nav{
+        padding: 10px;
+    }
+    nav li{
+        margin: 0px 8px;
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 450px){
+    nav{
+        margin-top: 0px;
+    }
+    nav .innernav{
+        flex-direction: column;
+        position: fixed;
+        background-color: white;
+        height: 100%;
+        padding: 0px 60px;
+        padding-top: 50px;
+        right: 0;
+        top: 0;
+        z-index: 3;
+        transform: translateX(100%);
+        transition: all 0.5s;
+    }
+    nav .innernav li{
+        margin: 10px auto;
+    }
+    nav .innernav .i{
+        position: absolute;
+        font-size: 1.4rem;
+        top: 20px;
+        left: 30px;
+        cursor: pointer;
+    }
+    nav .menu{
+        display: block;
+    }
+    .close{
+        display: block;
+    }
+}
+.homeinner{
+    display: flex;
+    flex-direction: row;
+}
+.homeinner .top{
+    width: 40%;
+    padding-left: 10%;
+}
+.homeinner .top h1{
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: white;
+}
+.homeinner .top p{
+    color: white;
+    margin-bottom: 80px;
+}
+.homeinner .top a{
+    text-decoration: none;
+    color: white;
+    background-color: #ef233c;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+.homeinner .side{
+    width: 40%;
+    padding: 30px;
+}
+.homeinner .side img{
+    max-width: 100%;
+}
+@media screen and (max-width: 650px){
+    .homeinner{
+        flex-direction: column-reverse;
+        padding-bottom: 30px;
+    }
+    .homeinner .side{
+        width: 70%;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    .homeinner .top{
+        width: 90%;
+    }
+    .homeinner .top h1{
+        margin: 10px 0px;
+        font-size: 2.5rem;
+    }
+    .homeinner .top p{
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 780px){
+    .homeinner{
+        padding-bottom: 20px;
+    }
+}
+.about{
+    width: 60%;
+    margin: 100px auto;
+}
+.about h2{
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: #444;
+}
+.about p{
+    margin-top: 50px;
+    color: #333;
+}
+@media screen and (max-width: 650px){
+    .about{
+        width: 90%;
+        margin: 50px auto;
+    }
+    .about h2{
+        font-size: 1.7rem;
+    }
+    .about p{
+        font-size: 1rem;
+    }
+}
+.demo{
+    background-color: rgb(243, 243, 243);
+    padding: 40px 10%;
+}
+.demo h3{
+    color: #333;
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 40px auto;
+    margin-bottom: 100px;
+}
+.demoinner{
+    width: 90%;
+    margin: 40px auto;
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.demoinner div{
+    width: 50%;
+    position: relative;
+}
+.demoinner div img{
+    border-radius: 5px;
+    max-width: 100%;
+}
+.demoinner div.demo2{
+    text-align: end;
+}
+.demoinner div h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 0px;
+}
+.demoinner div p{
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+.demoinner div a{
+    position: absolute;
+    color: #ef233c;
+    text-decoration: none;
+    bottom: 5px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.demoinner div a .i{
+    margin-left: 10px;
+}
+.demoinner .first{
+    width: 47%;
+}
+@media screen and (max-width: 780px){
+    .demo{
+        padding: 15px;
+    }
+    .demoinner{
+        width: 95%;
+    }
+    .demoinner .first{
+        text-align: end;
+    }
+    .demoinner .first p{
+        text-align: end;
+    }
+    .demo div img{
+        max-width: 100%;
+    }
+    .demoinner div a{
+        position: relative;
+    }
+}
+@media screen and (max-width: 650px){
+    .demo{
+        padding: 10px;
+    }
+    .demo h3{
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+    }
+    .demoinner div{
+        width: 90%;
+    }
+    .demoinner .first{
+        width: 90%;
+    }
+    .demoinner div img{
+        max-width: 100%;
+    }
+    .demoinner div h4{
+        font-size: 1.5rem;
+    }
+    .demoinner div p{
+        font-size: 1.1rem;
+    }
+    .demoinner div a{
+        position: relative;
+    }
+    .demo .d2{
+        flex-direction: column-reverse;
+    }
+}
+.code{
+    background-color: #2d2d2d;
+    color: #ccc;
+    border-radius: 2px;
+    padding: 1em;
+
+}
+.code .orange{
+    color: #f08d49;
+}
+.code .require{
+    color:   #fae89e ;
+}
+.code .var{
+    color: #45b39d;
+}
+.code .const{
+    color: #7dcea0;
+}
+.code .bool{
+    color: #2980b9;
+}
+.code .if{
+    color:  #9b59b6 ;
+}
+.install{
+    margin: 60px auto;
+    width: 70%;
+    position: relative;
+    padding-bottom: 30px;
+}
+.install h3{
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #333;
+}
+.install p{
+        font: 400 20px/1.5 "Source Sans Pro","Open Sans",Roboto,"San Francisco",Helvetica,Arial,sans-serif;
+        color: #333;
+}
+.install p a{
+    color: #ef233c;
+    text-decoration: none;
+}
+@media screen and (max-width: 780px){
+    .code pre{
+        overflow: scroll;
+    }
+}
+@media screen and (max-width: 640px){
+    .install{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .install h3{
+        font-size: 1.7rem;
+    }
+    .install p{
+        font-size: 1.1rem;
+    }
+    .code{
+        overflow: auto;
+        font-size: 1.1rem;
+    }
+}
+.community{
+    margin: 100px auto;
+    margin-bottom: 0px;
+    padding: 50px 10%;
+    background-color: rgb(247, 247, 247);
+}
+.community h3{
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.community .headingp{
+    width: 55%;
+    color: #444;
+    font-size: 1.1rem;
+    margin: 0px auto;
+    text-align: center;
+}
+.communityinner{
+    width: 70%;
+    margin: 100px auto;
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media screen and (max-width: 780px){
+    .communityinner{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 640px){
+    .community{
+        padding: 10px;
+        margin: 15px 0px;
+    }
+    .community .headingp{
+        width: 80%;
+    }
+    .communityinner{
+        width: 90%;
+        margin: 40px auto;
+    }
+}
+.personinfo img{
+    max-width: 100%;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.personinfo .info{
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px rgb(200,200,200);
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.5s;
+}
+.personinfo:hover img{
+    box-shadow: 2px 2px 2px 2px rgb(200,200,200);
+}
+.personinfo:hover .info{
+    box-shadow: none;
+}
+.personinfo .info h5,.personinfo .info h6{
+    margin: 0px;
+}
+.personinfo .info h5{
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: #333;
+    color: #ef233c;
+    margin: 10px auto 0px auto;
+}
+.personinfo .info h6{
+    color: #666;
+}
+.personinfo .info a {
+    color: #777;
+    font-size: 2.3rem;
+    margin: 0px 7px;
+}
+@media screen and (max-width: 640px){
+    .personinfo{
+        margin: 20px auto;
+    }
+}
+.footer{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+}
+.footer .i{
+    color: #ef233c;
+    margin-left: 6px;
+}
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 1.2s ease forwards;
+  }
+  .already-visible {
+    transform: translateY(0);
+    animation: none;
+  }
+  
+  @keyframes come-in {
+    to { transform: translateY(0); }
+  }
+  @media screen and (max-width: 640px){
+      .footer{
+          font-size: 0.9rem;
+      }
+  }

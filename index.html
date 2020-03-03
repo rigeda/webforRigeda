@@ -28,7 +28,7 @@
     <div class="homeinner">
         <div class="top">
             <h1 class="heading">Introduction</h1>
-            <p>Graphical library to handle the hard parts of creating software like electronic schematic editor/flowchart creator/mind maps/block diagrams in Lua with just a few lines of code.</p>
+            <p>Rigeda is collection of tools and methodologies to create a set of modern, open source, easily accessible tools for IC design, especially Analog</p>
             <a href="#about">Learn More</a>
         </div>
        
@@ -39,50 +39,32 @@
     <section class="about mod" id="about">
         <h2 class="heading">Road Map</h2>
         <p>
-            First why choose Lua? Lua is:
-			<ul>
-			<li>Very small</li>
-			<li>Extremely powerful</li>
-			<li>Very easy to learn for people from a non programming background or profession because:
-				<ul>
-					<li>It has a simple syntax</li>
-					<li>It has a single data structure</li>
-				</ul>
-			</li>
-			<li>Well proven language of choise in well known projects like:
-				<ul>
-					<li>Mediawiki (Wikipedia)</li>
-					<li>Wireshark</li>
-					<li>World of Warcraft</li>
-					<li>LuaTex</li>
-					<li>NMAP</li>
-					<li>Celestia</li>
-					<li>and so on...</li>
-				</ul>
-			</li>
-			</ul>
-			These reasons by themself make it a very powerful language for newcomers to adopt to get things done. <br><br>
-			
-			<ul>
-			<li><b>Lua-GL finally modularizes the design of complex software in a language that can be adapted by non expert programmers.</b></li> Most graphical software are mamoth code bases in languages such as C/C++/.NET/Java which are comparitively harder to adopt than languages like Python, Ruby and Lua. On top of that they don't incorporate modularity and flexibility by abstracting away the design into multiple layers. 
-			<li><b>Lua-GL aims to provide the 1st level library in a well chosen simple scripting language that can provide all the mechanisms to create complex graphical software</b></li> Software like a electronic schematic editor or a block diagram creator software similar to Microsoft Visio. It abstract away all the complex graphical operations and provides a simple extensible API that can be used to create a software with custom behavior, functionality and workflow. 
-			<li><b>Lua-GL even goes a step further by abstracting away the underlying GUI framework</b></li> to make it easy to swap it for say QT or even Javascript routines now that we can run Lua directly on the <a href="https://fengari.io/">browser</a>.
-			</ul>
-   With these design choices for Lua-GL it simply makes things a lot easier, faster, interoperable and more scalable for projects using it.
+            Rigeda is in its very early stage of development but growing fast. The major milestones we are targetting are listed below:
+			<ol>
+			<li>Finish <a href="https://lua-gl.rigeda.org">Lua-GL</a></li>
+			<li>Create schematic editor starting from the Lua-GL demo application</li>
+			<li>Create a waveform viewer by either using code from existing waveform viewer like GTKWave,Gwave,Kjwaves</li>
+			<li>Integrate Lua API in Klayout to make seamless integration of the whole tool suite</li><p> Lua would be the cohesive extension language common to all tools in Rigeda. Lua is a perfect language for extensibility and modularity of the tools since it is easy to learn by non programmers and extremely powerful and flexible to be used in amazing software like NMAP, Wireshark, VLC, etc.</p>
+			<li>Add methodology and API to record design flow for Machine Learning</li>
+			<li>Make 1st release</li>
+			<li>Create marketplace for plugins</li>
+			<li>Add documentation and spreadsheet plugins</li>
+			<li>Release 1st Machine Learning model for certain topologies</li>
+			</ol>
         </p>
     </section>
 
     <!-- Demo -->
     <section class="demo" id="demo">
         <h3 class="heading">Components</h3>
-        <h3 class="heading"><a href="https://github.com/Deepak123bharat/lua-gl/wiki" target="_blank">lua-gl</a></h3>
+        <h3 class="heading"><a href="https://lua-gl.rigeda.org" target="_blank">lua-gl</a></h3>
         
     </section>
 
    
     <!-- Footer -->
     <section class="footer">
-        Copyright <i class="fas fa-copyright i"></i> Lua-gl 2020 - All Right Reserved
+        Copyright <i class="fas fa-copyright i"></i> Rigeda 2020 - All Right Reserved
     </section>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/all.min.js"></script>
